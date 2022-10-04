@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --primary-dark-purple: #240D57;
+    --primary-purple: #501FC1;
+    --primary-lilac: #8456EC;
+    --primary-pink: #E87BF8;
+
+    --secondary-lilac: #CCB6FF;
+    --secondary-greyish-purple: #EDE5FF;
+    --secondary-light-purple: #F6F2FF;
+
+    --alert-pink: #FFD7E0;
+    --alert-red: #E61445;
+    --alert-light-green: #D3FFE2;
+    --alert-green: #00805E;
+
+    --neutral-grey: #4F4F4F;
+    --neutral-grey-medium: #828282;
+    --neutral-light-grey: #E0E0E0;
+    --neutral-grey-light: #F2F2F2;
+    --neutral-light: #FBFAFF;
+
+    --gradient: linear-gradient(var(--primary-lilac), var(--primary-pink));
+}
+
+*{
+    position: relative;
+    width: 1512px;
+    height: 982px;
+    background: #DDDDDD;
+    font-family: 'Commissioner', sans-serif;
+}
+
+.homepage {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    height: 775.69px;
+    left: calc(50% - 440px/2 - 366px);
+}
+
+.image-wrapper {
+    top: 125px;
+    background: url('./assets/Landing page image.svg') no-repeat;
+    filter: drop-shadow(0px 0px 46.8696px rgba(0, 0, 0, 0.05));
+    border-radius: 35.1522px;
+}
+
+.text-wrapper {
+    position: absolute;
+    width: 573.91px;
+    height: 192px;
+    top: 150px;
+    left: 500px;
+}
+
+.title-1 {
+    position: absolute;
+    width: 573.91px;
+    height: 192px;
+    left: 0px;
+    top: -35px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 64px;
+    /* or 100% */
+
+    text-align: right;
+
+    color: #240D57;
+}
+
+.title-2 {
+    position: absolute;
+    width: 573.91px;
+    height: 192px;
+    left: 0px;
+    top: 85px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 64px;
+    /* or 100% */
+
+    text-align: right;
+
+    color: #240D57;
+}
+
+.text {
+    position: absolute;
+    width: 295px;
+    height: 100px;
+    left: 279px;
+    top: 10px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 74px;
+    /* identical to box height */
+
+    text-align: right;
+
+    background: linear-gradient(90deg, #8456EC 24.2%, #E87BF8 120.46%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+br {
+    display: block;
+    margin-bottom: 2px;
+    font-size: 2px;
+    line-height: 2px;
+}
+
+.tagline {
+    width: 521px;
+    height: 56px;
+    top: 225px;
+    left: 50px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: right;
+
+    color: #4F4F4F;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.createEvent {
+    left: calc(55% - 320px/2 + 100px);
+    top: 300px;
+}
+
+button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    gap: 10px;
+
+    position: absolute;
+    width: 320px;
+    height: 55px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    /* identical to box height */
+
+    text-align: right;
+
+    color: #FFFFFF;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+    background: linear-gradient(90deg, #8456EC 3.25%, #E87BF8 100%);
+    border-radius: 10px;
+}
+
+.create-event {
+    width: 50vw;
+    height: 100vh;
+    padding: 15rem;
+}
+
+form {
+    height: auto;
+    width: 100%;
+    padding: 16px;
+    width: 90vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    display: block;
+    margin-bottom: 40px;
+    width: 100%;
+    height: auto;
+}
+
+form input {
+    height: auto;
+    width: 35%;
+    border: 0;
+    outline: 0;
+    font-size: 16px;
+    border-radius: 50px;
+    padding: 16px;
+    background-color: #EBECF0;
+    text-shadow: 1px 1px 0 #FFF;
+    letter-spacing: -0.2px;
+    font-size: 16px;
+    margin-right: 8px;
+    box-shadow:  inset 2px 2px 5px #FFF, inset -5px -5px 10px #BABECC;
+    box-sizing: border-box;
+    transition: all 0.2s ease-in-out;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+form input:focus {
+    box-shadow:  inset 1px 1px 2px #BABECC, inset -1px -1px 2px #FFF;
+}
+
+form .input-group {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+form .input-group label {
+    margin: 0;
+    flex: 1;
+}
+
+form svg {
+    width: 2.5rem;
+    height: auto;
+}
+
+.date-wrapper {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+.date-wrapper label {
+    margin-right: 0;
+    width: 150px;
+}
+
+.date-wrapper input {
+    height: 100%;
+    width: 500px;
+    margin-left: 0;
+}
+
+.address-wrapper {
+    margin-bottom: 100px;
+}
+
+.address-lookup {
+    width: 250px;
+    height: 250px;
+    left: 0;
+    top: 0;
+}
+
+.search svg {
+    width: 2.5rem;
+    height: auto;
+}
